@@ -422,7 +422,7 @@
                         <input type="hidden" name="_autoresponse" value="Thanks for reaching out! I’ll get back to you soon.">
 
                         <!-- 🔁 Redirect to your custom thank you page -->
-                        <input type="hidden" name="_next" value="">
+                       <input type="hidden" name="_next" value="https://27-nakulrathore.github.io/Portfolio---Latest/pages/thanks.html">
 
                         <button id="submit-btn" type="submit" class="submit-btn">
                             Send
@@ -438,14 +438,32 @@
         </a>
     </main>
 
-    <footer id="footer">
-        <p class="text-center mb-0"><span id="curr-year">YEAR</span> - <a title="Linkedin Profile"
-                href="https://www.linkedin.com/in/nakul-rathore-86699b295" target="_blank">Nakul Rathore
-                Portfolio</a></p>
-        <a href="https://github.com/27-NakulRathore" target="_blank">
-            <img src="https://hitwebcounter.com/counter/counter.php?page=12257590&style=0038&nbdigits=6&type=page&initCount=0"
-                title="Counter Widget" alt="Visit Counter" /></a>
+    <footer id="footer" style="background-color: #222; color: #fff; text-align: center; padding: 20px 0;">
+        <p style="margin: 0; font-size: 16px;">
+            © <span id="curr-year"></span> —
+            <a href="https://www.linkedin.com/in/nakul-rathore-86699b295"
+            target="_blank"
+            title="LinkedIn Profile"
+            style="color: #00acee; text-decoration: none;">
+            <strong>Nakul Rathore Portfolio</strong>
+            </a>
+        </p>
+
+        <div style="margin-top: 10px;">
+            <a href="https://hitwebcounter.com" target="_blank" title="Visit Counter">
+                <img src="https://hitwebcounter.com/counter/counter.php?page=12257590&style=0038&nbdigits=6&type=page&initCount=0"
+                    alt="Visit Counter"
+                    style="vertical-align: middle;" />
+            </a>
+        </div>
     </footer>
+
+    <!-- Auto-update the year -->
+    <script>
+        document.getElementById("curr-year").textContent = new Date().getFullYear();
+    </script>
+
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
