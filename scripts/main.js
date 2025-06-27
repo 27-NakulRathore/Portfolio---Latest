@@ -93,10 +93,10 @@ backToTop.addEventListener('click', (e) => {
 // change dp with an interval of 60 sec
 let dp = document.getElementById("dp");
 setInterval(() => {
-    if (dp.innerHTML === '<img src="assets/images/argha.png" alt="argha">')
-        dp.innerHTML = `<img src="assets/images/argha2.jpeg" alt="argha">`;
+    if (dp.innerHTML === '<img src="assets/images/nakul.png" alt="nakul">')
+        dp.innerHTML = `<img src="assets/images/nakul2.JPG" alt="nakul">`;
     else
-        dp.innerHTML = `<img src="assets/images/argha.png" alt="argha">`;
+        dp.innerHTML = `<img src="assets/images/nakul.png" alt="nakul">`;
 }, 60000);
 
 // showing different image after 17 hrs
