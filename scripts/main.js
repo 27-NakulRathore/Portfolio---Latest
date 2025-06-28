@@ -10,7 +10,12 @@ document.addEventListener('scroll', () => {
 
 // download cv
 const downloadCv = () => {
-    alert('Currently unavailable! Please try later.')
+    const link = document.createElement('a');
+    link.href = './assets/Resume-Svvv.pdf'; // ✅ path to your file
+    link.download = 'NakulRathore_Resume.docx';       // ✅ optional custom filename
+    document.body.appendChild(link); // sometimes needed for Firefox
+    link.click();
+    document.body.removeChild(link);
 }
 
 // contact form submission
