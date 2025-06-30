@@ -11,7 +11,7 @@ document.addEventListener('scroll', () => {
 // download cv
 const downloadCv = () => {
     const link = document.createElement('a');
-    link.href = './assets/Resume-Svvv.pdf'; // ✅ path to your file
+    link.href = 'https://drive.google.com/file/d/1XnUxAbqNCsdJjDFiPiTuB1UgZ1ZV6VHh/view?usp=drive_link'; // ✅ path to your file
     link.download = 'NakulRathore_Resume.docx';       // ✅ optional custom filename
     document.body.appendChild(link); // sometimes needed for Firefox
     link.click();
