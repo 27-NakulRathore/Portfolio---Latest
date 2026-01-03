@@ -11,7 +11,7 @@ document.addEventListener('scroll', () => {
 // download cv
 const downloadCv = () => {
     const link = document.createElement('a');
-    link.href = 'https://drive.google.com/file/d/1IVNsiW3h7q3omT32jUS1yuIpDcedUX5S/view?usp=drive_link'; // ✅ path to your file
+    link.href = 'assets/Nakul-Rathore.pdf'; // ✅ path to your file
     link.download = 'NakulRathore_Resume.docx';       // ✅ optional custom filename
     document.body.appendChild(link); // sometimes needed for Firefox
     link.click();
