@@ -8,6 +8,18 @@ document.addEventListener('scroll', () => {
     }
 })
 
+function toggleDarkMode(){
+document.body.classList.toggle("dark-mode");
+}
+
+const menuBtn = document.getElementById("menu-btn");
+
+menuBtn.addEventListener("click", function(){
+
+menuBtn.classList.toggle("open");
+
+});
+
 // download cv
 const downloadCv = () => {
     const link = document.createElement('a');

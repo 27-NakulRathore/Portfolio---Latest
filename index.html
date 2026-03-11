@@ -1,482 +1,700 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords"
-        content="Nakul Rathore, portfolio Nakul Rathore, Full-stack Web Developer, portfolio website, Nakul Rathore website, App Developer" />
-    <meta name="description"
-        content="Welcome to Nakul's Portfolio. Passionate Web & App Developer. Quick Learner & Tech Ethusiast." />
-    <meta name="author" content="Nakul Rathore @nakulll_r">
-    <meta name="image" content="https://27-NakulRathore.github.io/portfolio/assets/images/nakul2.png">
-    <link rel="icon" type="image/png" href="assets/images/logo.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="stylesheets/utils.css">
-    <link rel="stylesheet" href="stylesheets/style.css">
-    <link rel="stylesheet" href="stylesheets/responsive.css">
-    <link rel="stylesheet" href="stylesheets/scrollbar.css">
-    <script src="https://kit.fontawesome.com/b955eaf29b.js" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="Nakul Rathore, portfolio Nakul Rathore, Full-stack Web Developer, portfolio website, Nakul Rathore website, App Developer"
+    />
+    <meta
+      name="description"
+      content="Welcome to Nakul's Portfolio. Passionate Web & App Developer. Quick Learner & Tech Ethusiast."
+    />
+    <meta name="author" content="Nakul Rathore @nakulll_r" />
+    <meta
+      name="image"
+      content="https://27-NakulRathore.github.io/portfolio/assets/images/nakul2.png"
+    />
+    <link rel="icon" type="image/png" href="assets/images/logo.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="stylesheets/utils.css" />
+    <link rel="stylesheet" href="stylesheets/style.css" />
+    <link rel="stylesheet" href="stylesheets/responsive.css" />
+    <link rel="stylesheet" href="stylesheets/scrollbar.css" />
+    <script
+      src="https://kit.fontawesome.com/b955eaf29b.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Nakul Rathore</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header id="page-top">
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-            <div class="container">
-                <a class="navbar-brand" href="#">Portfolio</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse flex-row-reverse" id="navbarSupportedContent">
-                    <ul class="navbar-nav">
-                        <li class="nav-item px-2">
-                            <a class="nav-link" aria-current="page" href="#home">Home</a>
-                        </li>
-                        <li class="nav-item px-2">
-                            <a class="nav-link" href="#about">About</a>
-                        </li>
-                        <li class="nav-item px-2">
-                            <a class="nav-link" href="#skills">Skills</a>
-                        </li>
-                        <li class="nav-item px-2">
-                            <a class="nav-link" href="#portfolio">Portfolio</a>
-                        </li>
-                        <li class="nav-item px-2">
-                            <a class="nav-link" href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">Portfolio</a>
+
+          <button class="navbar-toggler" id="menu-btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+            <span></span>
+            <span></span>
+            <span></span>
+         </button>
+         <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+<span class="navbar-toggler-icon"></span>
+</button> -->
+
+          <div
+            class="collapse navbar-collapse flex-row-reverse"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item px-2">
+                <a class="nav-link nav-close" href="#home">Home</a>
+              </li>
+
+              <li class="nav-item px-2">
+                <a class="nav-link nav-close" href="#about">About</a>
+              </li>
+
+              <li class="nav-item px-2">
+                <a class="nav-link nav-close" href="#skills">Skills</a>
+              </li>
+
+              <li class="nav-item px-2">
+                <a class="nav-link nav-close" href="#portfolio">Portfolio</a>
+              </li>
+
+              <li class="nav-item px-2">
+                <a class="nav-link nav-close" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
     <main>
-        <!-- home  -->
-        <section id="home" class="home">
-            <div id="particles-js"></div>
-            <div class="home-left mx-auto">
-                <p>Hi, I'm <span class="text-purple">Nakul Rathore</span>
-                    <br>and I am a passionate
-                    <br><span id="typing" class="text-purple">Web Developer</span>
-                </p>
+      <!-- home  -->
+      <section id="home" class="home">
+        <div id="particles-js"></div>
+            <div class="home-left mx-auto text-center">
 
-                <button type="button" class="btn btn-dark" onclick="downloadCv()"><i class="fa-solid fa-download"></i>
-                    Download CV</button>
-            </div>
-            <div class="home-right mx-auto" id="home-util-img">
-                <img src="assets/images/home-bg.png" alt="home-bg">
-                <!-- showing below img(s) conditionally -->
-                <!-- <img src="assets/images/home-bg-2.svg" alt="home-bg"> -->
-                <!-- <img src="assets/images/home-bg-3.png" alt="home-bg"> -->
-            </div>
-        </section>
-        <div class="h-bar"></div>
+                <h2>
+                Hi, I'm <span class="text-purple">Nakul Rathore</span>
+                </h2>
 
-        <!-- about  -->
-        <section id="about" class="about">
-            <div class="about-left mx-auto" id="dp">
-                <img src="assets/images/nakul.png" alt="nakul">
-            </div>
-            <div class="about-right mx-auto">
-                <p>As a pre final-year B.Tech student pursuing Computer Science and Engineering, I am passionate about
-                    technology and its limitless possibilities. With a strong foundation in programming and
-                    problem-solving, I constantly strive to expand my knowledge and skills. Through my dedication,
-                    curiosity, and commitment to excellence, I aim to make a meaningful contribution to the field of
-                    computer science.</p>
-                <div class="about-button-group">
-                    <!-- Button trigger modal -->
-                    <button type="button" class="btn my-btn-fill mx-3" data-bs-toggle="modal"
-                        data-bs-target="#exampleModal">Career Timeline</button>
-                    <button type="button" class="btn my-btn"><a href="#contact">Let's Talk !</a></button>
-                </div>
-            </div>
-        </section>
-        <!-- modal for about section  -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content bg-dark text-white">
-                    <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel">TIMELINE</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <section class="timeline">
-                            <ul>
-                                <li>
-                                    <div>
-                                        <time>2022 - 2026</time>
-                                        <img class="timeline-image" src="assets/images/timeline/SVVV.png"
-                                            alt="bppimt">
-                                        <h2>Shri Vaishnav Institute of Technology & Science</h2>
-                                        <p><i class="fa-solid fa-circle-right"></i> Pursuing B Tech in Computer Science
-                                            & Engineering</p>
-                                        <p><i class="fa-solid fa-circle-right"></i> Board: Shri Vaishnav Vidyapeeth Vishwavidyalaya</p>
-                                        <p><i class="fa-solid fa-circle-right"></i> Overall CGPA: 7.52 (Till Sem-7)</p>
-                                        <p><i class="fa-solid fa-circle-right"></i> Passing Year: 2026</p>
-                                        <p><a class="timeline-web-link" href="https://www.svvv.edu.in/"
-                                                target="_blank"><i class="fa-solid fa-square-arrow-up-right"></i> Visit
-                                                Website</a></p>
-                                    </div>
-                                </li>
+                <h4 class="mt-3">
+                <span id="typing" class="text-purple"></span>
+                </h4>
 
-                                <li>
-                                    <div>
-                                        <time>12th - 2022</time>
-                                        <h2>Passed Madhyamik Examination</h2>
-                                        <p><i class="fa-solid fa-circle-right"></i> Board: Madhya Pradesh Board of
-                                            Secondary Education</p>
-                                        <p><i class="fa-solid fa-circle-right"></i> Marks obtained: 351/500</p>
-                                        <p><i class="fa-solid fa-circle-right"></i> Percentage: 70.4%</p>
-                                    </div>
-                                </li>
+                <div class="mt-4">
 
-                                <li>
-                                    <div>
-                                        <time>10th - 2020</time>
-                                        <h2>Passed Madhyamik Examination</h2>
-                                        <p><i class="fa-solid fa-circle-right"></i> Board: Madhya Pradesh Board of
-                                            Secondary Education</p>
-                                        <p><i class="fa-solid fa-circle-right"></i> Marks obtained: 455/500</p>
-                                        <p><i class="fa-solid fa-circle-right"></i> Percentage: 91%</p>
-                                    </div>
-                                </li>
+                <a href="#contact" class="btn btn-primary me-3">
+                Hire Me
+                </a>
 
-                                <li>
-                                    <div>
-                                        <time>2011 - 2022</time>
-                                        <img class="timeline-image" src="assets/images/timeline/SKMDJ.png" alt="ksnhs">
-                                        <h2>Shri Kalyan Mateshwari Digamber Jain H. Sec. School</h2>
-                                        <p><i class="fa-solid fa-circle-right"></i> Studied from class 1 to class 12</p>
-                                        <p><a class="timeline-web-link"
-                                                href="https://www.google.com/maps/place/Shree+Kalyan+Mateshwari+Digamber+Girls+Higher+Secondary+School/@22.688552,75.6897467,13z/data=!4m6!3m5!1s0x3962fdaf5df40f13:0x4ef59286c0f161d9!8m2!3d22.713437!4d75.846276!16s%2Fg%2F1q64qk6yz?authuser=0&entry=ttu&g_ep=EgoyMDI1MDYyMi4wIKXMDSoASAFQAw%3D%3D"
-                                                target="_blank"><i class="fa-solid fa-square-arrow-up-right"></i> Visit
-                                                Website</a></p>
-                                    </div>
-                                </li>   
-                            </ul>
-                        </section>
-                    </div>
-                    <div class="modal-footer d-flex justify-content-center">
-                        <button type="button" class="btn btn-secondary bg-dark border-dark" data-bs-dismiss="modal"><i
-                                class="fa-regular fa-circle-xmark"></i></button>
-                    </div>
-                </div>
+                <button type="button" class="btn btn-dark" onclick="downloadCv()">
+                <i class="fa-solid fa-download"></i> Download CV
+                </button>
+
             </div>
+
         </div>
-        <!-- end of modal  -->
+        <div class="home-right mx-auto" id="home-util-img">
+          <img src="assets/images/home-bg.png" alt="home-bg" />
+          <!-- showing below img(s) conditionally -->
+          <!-- <img src="assets/images/home-bg-2.svg" alt="home-bg"> -->
+          <!-- <img src="assets/images/home-bg-3.png" alt="home-bg"> -->
+        </div>
+      </section>
+      <div class="h-bar"></div>
 
-        <!-- skills  -->
-        <section class="skills" id="skills">
-            <div class="section-heading">
-                <h2>SKILL SET</h2>
-                <div class="heading-underline"></div>
+      <!-- about  -->
+      <section id="about" class="about">
+        <div class="about-left mx-auto" id="dp">
+          <img src="assets/images/nakul.png" alt="nakul" />
+        </div>
+        <div class="about-right mx-auto">
+          <p>
+            As a final-year B.Tech student pursuing Computer Science and
+            Engineering, I am passionate about technology and its limitless
+            possibilities. With a strong foundation in programming and
+            problem-solving. I constantly strive to expand my knowledge and
+            skills. Through my dedication, curiosity, and commitment to
+            excellence. I aim to make a meaningful contribution to the field of
+            computer science.
+          </p>
+          <div class="about-button-group">
+            <!-- Button trigger modal -->
+            <button
+              type="button"
+              class="btn my-btn-fill mx-3"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              Career Timeline
+            </button>
+            <button type="button" class="btn my-btn">
+              <a href="#contact">Let's Talk !</a>
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- modal for about section  -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content bg-dark text-white">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">TIMELINE</h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
             </div>
-            <div class="skill-container">
-                <div class="skill-item mx-auto">
-                    <img src="assets/svg/html.svg" alt="html" class="skill-logo">
-                    <div class="skill-details">
-                        <h5 class="skill-title">HTML</h5>
-                        <div class="skill-progress-bar ninty"></div>
+            <div class="modal-body">
+              <section class="timeline">
+                <ul>
+                  <li>
+                    <div>
+                      <time>2022 - 2026</time>
+                      <img
+                        class="timeline-image"
+                        src="assets/images/timeline/SVVV.png"
+                        alt="bppimt"
+                      />
+                      <h2>Shri Vaishnav Institute of Technology & Science</h2>
+                      <p>
+                        <i class="fa-solid fa-circle-right"></i> Pursuing B Tech
+                        in Computer Science & Engineering
+                      </p>
+                      <p>
+                        <i class="fa-solid fa-circle-right"></i> Board: Shri
+                        Vaishnav Vidyapeeth Vishwavidyalaya
+                      </p>
+                      <p>
+                        <i class="fa-solid fa-circle-right"></i> Overall CGPA:
+                        7.52 (Till Sem-7)
+                      </p>
+                      <p>
+                        <i class="fa-solid fa-circle-right"></i> Passing Year:
+                        2026
+                      </p>
+                      <p>
+                        <a
+                          class="timeline-web-link"
+                          href="https://www.svvv.edu.in/"
+                          target="_blank"
+                          ><i class="fa-solid fa-square-arrow-up-right"></i>
+                          Visit Website</a
+                        >
+                      </p>
                     </div>
-                </div>
-                <div class="skill-item mx-auto">
-                    <img src="assets/svg/css.svg" alt="css" class="skill-logo">
-                    <div class="skill-details">
-                        <h5 class="skill-title">CSS</h5>
-                        <div class="skill-progress-bar fifty"></div>
+                  </li>
+
+                  <li>
+                    <div>
+                      <time>12th - 2022</time>
+                      <h2>Passed Madhyamik Examination</h2>
+                      <p>
+                        <i class="fa-solid fa-circle-right"></i> Board: Madhya
+                        Pradesh Board of Secondary Education
+                      </p>
+                      <p>
+                        <i class="fa-solid fa-circle-right"></i> Marks obtained:
+                        351/500
+                      </p>
+                      <p>
+                        <i class="fa-solid fa-circle-right"></i> Percentage:
+                        70.4%
+                      </p>
                     </div>
-                </div>
-                <div class="skill-item mx-auto">
-                    <img src="assets/svg/js.svg" alt="JavaScript" class="skill-logo">
-                    <div class="skill-details">
-                        <h5 class="skill-title">JavaScript</h5>
-                        <div class="skill-progress-bar fifty"></div>
+                  </li>
+
+                  <li>
+                    <div>
+                      <time>10th - 2020</time>
+                      <h2>Passed Madhyamik Examination</h2>
+                      <p>
+                        <i class="fa-solid fa-circle-right"></i> Board: Madhya
+                        Pradesh Board of Secondary Education
+                      </p>
+                      <p>
+                        <i class="fa-solid fa-circle-right"></i> Marks obtained:
+                        455/500
+                      </p>
+                      <p>
+                        <i class="fa-solid fa-circle-right"></i> Percentage: 91%
+                      </p>
                     </div>
-                </div>
-                <div class="skill-item mx-auto">
-                    <img src="assets/svg/c.svg" alt="c" class="skill-logo">
-                    <div class="skill-details">
-                        <h5 class="skill-title">C</h5>
-                        <div class="skill-progress-bar eighty"></div>
+                  </li>
+
+                  <li>
+                    <div>
+                      <time>2011 - 2022</time>
+                      <img
+                        class="timeline-image"
+                        src="assets/images/timeline/SKMDJ.png"
+                        alt="ksnhs"
+                      />
+                      <h2>
+                        Shri Kalyan Mateshwari Digamber Jain H. Sec. School
+                      </h2>
+                      <p>
+                        <i class="fa-solid fa-circle-right"></i> Studied from
+                        class 1 to class 12
+                      </p>
+                      <p>
+                        <a
+                          class="timeline-web-link"
+                          href="https://www.google.com/maps/place/Shree+Kalyan+Mateshwari+Digamber+Girls+Higher+Secondary+School/@22.688552,75.6897467,13z/data=!4m6!3m5!1s0x3962fdaf5df40f13:0x4ef59286c0f161d9!8m2!3d22.713437!4d75.846276!16s%2Fg%2F1q64qk6yz?authuser=0&entry=ttu&g_ep=EgoyMDI1MDYyMi4wIKXMDSoASAFQAw%3D%3D"
+                          target="_blank"
+                          ><i class="fa-solid fa-square-arrow-up-right"></i>
+                          Visit Website</a
+                        >
+                      </p>
                     </div>
-                </div>
-                <div class="skill-item mx-auto">
-                    <img src="assets/svg/cpp.svg" alt="cpp" class="skill-logo">
-                    <div class="skill-details">
-                        <h5 class="skill-title">CPP</h5>
-                        <div class="skill-progress-bar seventy"></div>
-                    </div>
-                </div>
-                <div class="skill-item mx-auto">
-                    <img src="assets/svg/java.png" alt="java" class="skill-logo">
-                    <div class="skill-details">
-                        <h5 class="skill-title">Java</h5>
-                        <div class="skill-progress-bar ninty"></div>
-                    </div>
-                </div>
-                <div class="skill-item mx-auto">
-                    <img src="assets/svg/python.svg" alt="python" class="skill-logo">
-                    <div class="skill-details">
-                        <h5 class="skill-title">Python</h5>
-                        <div class="skill-progress-bar fifty"></div>
-                    </div>
-                </div>
-                <div class="skill-item mx-auto">
-                    <img src="assets/svg/spring.png" alt="spring" class="skill-logo">
-                    <div class="skill-details">
-                        <h5 class="skill-title">Spring Boot</h5>
-                        <div class="skill-progress-bar seventy"></div>
-                    </div>
-                </div>
-                <div class="skill-item mx-auto">
-                    <img src="assets/svg/react.svg" alt="react" class="skill-logo">
-                    <div class="skill-details">
-                        <h5 class="skill-title">React JS</h5>
-                        <div class="skill-progress-bar sixty"></div>
-                    </div>
-                </div>
-                <div class="skill-item mx-auto">
-                    <img src="assets/svg/uiux.svg" alt="uiux" class="skill-logo">
-                    <div class="skill-details">
-                        <h5 class="skill-title">UI/UX Designing</h5>
-                        <div class="skill-progress-bar seventy"></div>
-                    </div>
-                </div>
-                <div class="skill-item mx-auto">
-                    <img src="assets/svg/git.svg" alt="git" class="skill-logo">
-                    <div class="skill-details">
-                        <h5 class="skill-title">Version Control</h5>
-                        <div class="skill-progress-bar eighty"></div>
-                    </div>
-                </div>
+                  </li>
+                </ul>
+              </section>
             </div>
-        </section>
-
-        <!-- portfolio  -->
-        <section class="portfolio" id="portfolio">
-            <div class="section-heading">
-                <h2>LATEST PROJECTS</h2>
-                <div class="heading-underline"></div>
+            <div class="modal-footer d-flex justify-content-center">
+              <button
+                type="button"
+                class="btn btn-secondary bg-dark border-dark"
+                data-bs-dismiss="modal"
+              >
+                <i class="fa-regular fa-circle-xmark"></i>
+              </button>
             </div>
+          </div>
+        </div>
+      </div>
+      <!-- end of modal  -->
 
-            <div class="portfolio-container" id="portfolio-container">
-                <!-- below div is to be repeated in the portfolio page -->
-                <div class="content portfolio-item mx-auto">
-                    <div class="content-overlay"></div>
-                    <img class="content-image" src="assets/projects/CropBoom.png" alt="" class="portfolio-image">
-                    <div class="content-details fadeIn-bottom">
-                        <h3 class="content-title">CropBoom - AI Crop Marketplace</h3>
-                        <p class="content-text">A Spring web application featured with AI-Integrated Smart Farming Platform
-                        </p>
-                    </div>
-                    <div class="button-group">
-                        <button type="button" class="btn my-btn mx-3"><a href="https://github.com/27-NakulRathore/CropBoom-AI-Crop-Marketplace.git"
-                                target="_blank"><i class="fa-solid fa-link"></i>
-                                Visit</a></button>
-                    </div>
-                </div>
-
-                <div class="content portfolio-item mx-auto">
-                    <div class="content-overlay"></div>
-                    <img class="content-image" src="assets/projects/chatroom.jpg" alt="" class="portfolio-image">
-                    <div class="content-details fadeIn-bottom">
-                        <h3 class="content-title">TalkSync</h3>
-                        <p class="content-text">Built a real-time chat application using React for the frontend and Spring Boot as the backend, enabling instant message exchange through WebSocket protocol.
-                        </p>
-                    </div>
-                    <div class="button-group">
-                        <button type="button" class="btn my-btn mx-3"><a href=""
-                                target="_blank"><i class="fa-solid fa-link"></i>
-                                Visit</a></button>
-                    </div>
-                </div>
-
-                <div class="content portfolio-item mx-auto">
-                    <div class="content-overlay"></div>
-                    <img class="content-image" src="assets/projects/BookMNG-AllBooksPage.png" alt=""
-                        class="portfolio-image">
-                    <div class="content-details fadeIn-bottom">
-                        <h3 class="content-title">Book-shala</h3>
-                        <p class="content-text">Developed a CRUD-based web application to manage book inventory using Java Server Pages (JSP) with MVC design principles.
-                        </p>
-                    </div>
-                    <div class="button-group">
-                        <button type="button" class="btn my-btn mx-3"><a href="https://github.com/27-NakulRathore/BookManagement-WebApp.git"
-                                target="_blank"><i class="fa-solid fa-link"></i>
-                                Visit</a></button>
-                    </div>
-                </div>
-
-                <div class="content portfolio-item mx-auto">
-                    <div class="content-overlay"></div>
-                    <img class="content-image" src="assets/projects/medicare.png" alt="" class="portfolio-image">
-                    <div class="content-details fadeIn-bottom">
-                        <h3 class="content-title">Medicare</h3>
-                        <p class="content-text">A AI Powered disease prediction tool</p>
-                    </div>
-                    <div class="button-group">
-                        <button type="button" class="btn my-btn mx-3"><a
-                                href="https://medicare-2025.netlify.app/" target="_blank"><i
-                                    class="fa-solid fa-link"></i>
-                                Visit</a></button>
-                    </div>
-                </div>
-
-                <div class="content portfolio-item mx-auto">
-                    <div class="content-overlay"></div>
-                    <img class="content-image" src="assets/projects/icalculator.png" alt=""
-                        class="portfolio-image">
-                    <div class="content-details fadeIn-bottom">
-                        <h3 class="content-title">iCalculator</h3>
-                        <p class="content-text">Simple and Scientific Calc</p>
-                    </div>
-                    <div class="button-group">
-                        <button type="button" class="btn my-btn mx-3"><a
-                                href="https://27-nakulrathore.github.io/iCalculator/" target="_blank"><i
-                                    class="fa-solid fa-link"></i>
-                                Visit</a></button>
-                    </div>
-                </div>
-
-                <div class="content portfolio-item mx-auto">
-                    <div class="content-overlay"></div>
-                    <img class="content-image" src="assets/projects/how_lucky_you_are.png" alt="" class="portfolio-image">
-                    <div class="content-details fadeIn-bottom">
-                        <h3 class="content-title">How Lucky You Are</h3>
-                        <p class="content-text">Guess the random number...</p>
-                    </div>
-                    <div class="button-group">
-                        <button type="button" class="btn my-btn mx-3"><a href=" https://27-nakulrathore.github.io/HowLuckyYouAre/"
-                                target="_blank"><i class="fa-solid fa-link"></i>
-                                Visit</a></button>
-                    </div>
-                </div>
-                
-                <div class="content portfolio-item mx-auto">
-                    <div class="content-overlay"></div>
-                    <img class="content-image" src="assets/projects/tic_tac_toe.png" alt="" class="portfolio-image">
-                    <div class="content-details fadeIn-bottom">
-                        <h3 class="content-title">tic tac toe</h3>
-                        <p class="content-text">Play with fun</p>
-                    </div>
-                    <div class="button-group">
-                        <button type="button" class="btn my-btn mx-3"><a
-                                href="https://27-nakulrathore.github.io/Tic-Tac-Toe/" target="_blank"><i
-                                    class="fa-solid fa-link"></i>
-                                Visit</a></button>
-                    </div>
-                </div>
-
+      <!-- skills  -->
+      <section class="skills" id="skills">
+        <div class="section-heading">
+          <h2>SKILL SET</h2>
+          <div class="heading-underline"></div>
+        </div>
+        <div class="skill-container">
+          <div class="skill-item mx-auto">
+            <img src="assets/svg/html.svg" alt="html" class="skill-logo" />
+            <div class="skill-details">
+              <h5 class="skill-title">HTML</h5>
+              <div class="skill-progress-bar ninty"></div>
             </div>
-        </section>
-
-        <!-- contact  -->
-        <section id="contact">
-            <div class="contact-box">
-                <div class="contact-links">
-                    <h2>CONTACT</h2>
-                    <div class="links">
-                        <div title="Linkedin Profile" class="link">
-                            <a href="https://www.linkedin.com/in/nakul-rathore-86699b295" target="_blank"><img
-                                    src="assets/social/linkedin.svg" alt="linkedin"></a>
-                        </div>
-                        <div title="Github Profile" class="link">
-                            <a href="https://github.com/27-NakulRathore" target="_blank"><img
-                                    src="assets/social/github.svg" alt="github"></a>
-                        </div>
-                        <div title="X Handle" class="link">
-                            <a href="" target="_blank"><img src="assets/social/x.svg"
-                                    alt="twitter"></a>
-                        </div>
-                        <div title="Facebook Profile" class="link">
-                            <a href="" target="_blank"><img
-                                    src="assets/social/facebook.svg" alt="facebook"></a>
-                        </div>
-                        <div title="Instagram Profile" class="link">
-                            <a href="" target="_blank"><img
-                                    src="assets/social/instagram.svg" alt="instagram"></a>
-                        </div>
-                        <div title="Email" class="link">
-                            <a href="mailto:contact.nakulr950@gmail.com" target="_blank"><img
-                                    src="assets/social/mail.svg" alt="mail"></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="contact-form-wrapper">
-                    <form class="contact-form" action="https://formsubmit.co/nakulrat950@gmail.com" method="POST">
-                        <div class="form-item">
-                            <input id="name" type="text" name="name" required>
-                            <label>Name</label>
-                        </div>
-                        <div class="form-item">
-                            <input id="email" type="email" name="email" required>
-                            <label>Email</label>
-                        </div>
-                        <div class="form-item">
-                            <input id="subject" type="text" name="subject" required>
-                            <label>Subject</label>
-                        </div>
-                        <div class="form-item">
-                            <textarea id="message" class="message" name="message" required></textarea>
-                            <label>Message</label>
-                        </div>
-
-                        <!-- Optional behavior controls -->
-                        <input type="hidden" name="_captcha" value="false">
-                        <input type="hidden" name="_template" value="box">
-                        <input type="hidden" name="_autoresponse" value="Thanks for reaching out! I’ll get back to you soon.">
-
-                        <!-- 🔁 Redirect to your custom thank you page -->
-                       <input type="hidden" name="_next" value="https://27-nakulrathore.github.io/Portfolio---Latest/pages/thanks.html">
-
-                        <button id="submit-btn" type="submit" class="submit-btn">
-                            Send
-                        </button>
-                    </form>
-                </div>
+          </div>
+          <div class="skill-item mx-auto">
+            <img src="assets/svg/css.svg" alt="css" class="skill-logo" />
+            <div class="skill-details">
+              <h5 class="skill-title">CSS</h5>
+              <div class="skill-progress-bar fifty"></div>
             </div>
-        </section>
+          </div>
+          <div class="skill-item mx-auto">
+            <img src="assets/svg/js.svg" alt="JavaScript" class="skill-logo" />
+            <div class="skill-details">
+              <h5 class="skill-title">JavaScript</h5>
+              <div class="skill-progress-bar fifty"></div>
+            </div>
+          </div>
+          <div class="skill-item mx-auto">
+            <img src="assets/svg/c.svg" alt="c" class="skill-logo" />
+            <div class="skill-details">
+              <h5 class="skill-title">C</h5>
+              <div class="skill-progress-bar eighty"></div>
+            </div>
+          </div>
+          <div class="skill-item mx-auto">
+            <img src="assets/svg/cpp.svg" alt="cpp" class="skill-logo" />
+            <div class="skill-details">
+              <h5 class="skill-title">CPP</h5>
+              <div class="skill-progress-bar seventy"></div>
+            </div>
+          </div>
+          <div class="skill-item mx-auto">
+            <img src="assets/svg/java.png" alt="java" class="skill-logo" />
+            <div class="skill-details">
+              <h5 class="skill-title">Java</h5>
+              <div class="skill-progress-bar ninty"></div>
+            </div>
+          </div>
+          <div class="skill-item mx-auto">
+            <img src="assets/svg/python.svg" alt="python" class="skill-logo" />
+            <div class="skill-details">
+              <h5 class="skill-title">Python</h5>
+              <div class="skill-progress-bar fifty"></div>
+            </div>
+          </div>
+          <div class="skill-item mx-auto">
+            <img src="assets/svg/spring.png" alt="spring" class="skill-logo" />
+            <div class="skill-details">
+              <h5 class="skill-title">Spring Boot</h5>
+              <div class="skill-progress-bar seventy"></div>
+            </div>
+          </div>
+          <div class="skill-item mx-auto">
+            <img src="assets/svg/react.svg" alt="react" class="skill-logo" />
+            <div class="skill-details">
+              <h5 class="skill-title">React JS</h5>
+              <div class="skill-progress-bar sixty"></div>
+            </div>
+          </div>
+          <div class="skill-item mx-auto">
+            <img src="assets/svg/uiux.svg" alt="uiux" class="skill-logo" />
+            <div class="skill-details">
+              <h5 class="skill-title">UI/UX Designing</h5>
+              <div class="skill-progress-bar seventy"></div>
+            </div>
+          </div>
+          <div class="skill-item mx-auto">
+            <img src="assets/svg/git.svg" alt="git" class="skill-logo" />
+            <div class="skill-details">
+              <h5 class="skill-title">Version Control</h5>
+              <div class="skill-progress-bar eighty"></div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <!-- scroll to top button  -->
-        <a title="Back To Top" id="back-to-top">
-            <i class="fas fa-2x fa-angle-up" style="padding-top: 7px;"></i>
-        </a>
+      <!-- portfolio  -->
+      <section class="portfolio" id="portfolio">
+        <div class="section-heading">
+          <h2>LATEST PROJECTS</h2>
+          <div class="heading-underline"></div>
+        </div>
+
+        <div class="portfolio-container" id="portfolio-container">
+          <!-- below div is to be repeated in the portfolio page -->
+          <div class="content portfolio-item mx-auto">
+            <div class="content-overlay"></div>
+            <img
+              class="content-image"
+              src="assets/projects/CropBoom.png"
+              alt=""
+              class="portfolio-image"
+            />
+            <div class="content-details fadeIn-bottom">
+              <h3 class="content-title">CropBoom - AI Crop Marketplace</h3>
+              <p class="content-text">
+                A Spring web application featured with AI-Integrated Smart
+                Farming Platform
+              </p>
+            </div>
+            <div class="button-group">
+              <button type="button" class="btn my-btn mx-3">
+                <a
+                  href="https://github.com/27-NakulRathore/CropBoom-AI-Crop-Marketplace.git"
+                  target="_blank"
+                  ><i class="fa-solid fa-link"></i> Visit</a
+                >
+              </button>
+            </div>
+          </div>
+
+          <div class="content portfolio-item mx-auto">
+            <div class="content-overlay"></div>
+            <img
+              class="content-image"
+              src="assets/projects/chatroom.jpg"
+              alt=""
+              class="portfolio-image"
+            />
+            <div class="content-details fadeIn-bottom">
+              <h3 class="content-title">TalkSync</h3>
+              <p class="content-text">
+                Built a real-time chat application using React for the frontend
+                and Spring Boot as the backend, enabling instant message
+                exchange through WebSocket protocol.
+              </p>
+            </div>
+            <div class="button-group">
+              <button type="button" class="btn my-btn mx-3">
+                <a href="" target="_blank"
+                  ><i class="fa-solid fa-link"></i> Visit</a
+                >
+              </button>
+            </div>
+          </div>
+
+          <div class="content portfolio-item mx-auto">
+            <div class="content-overlay"></div>
+            <img
+              class="content-image"
+              src="assets/projects/BookMNG-AllBooksPage.png"
+              alt=""
+              class="portfolio-image"
+            />
+            <div class="content-details fadeIn-bottom">
+              <h3 class="content-title">Book-shala</h3>
+              <p class="content-text">
+                Developed a CRUD-based web application to manage book inventory
+                using Java Server Pages (JSP) with MVC design principles.
+              </p>
+            </div>
+            <div class="button-group">
+              <button type="button" class="btn my-btn mx-3">
+                <a
+                  href="https://github.com/27-NakulRathore/BookManagement-WebApp.git"
+                  target="_blank"
+                  ><i class="fa-solid fa-link"></i> Visit</a
+                >
+              </button>
+            </div>
+          </div>
+
+          <div class="content portfolio-item mx-auto">
+            <div class="content-overlay"></div>
+            <img
+              class="content-image"
+              src="assets/projects/medicare.png"
+              alt=""
+              class="portfolio-image"
+            />
+            <div class="content-details fadeIn-bottom">
+              <h3 class="content-title">Medicare</h3>
+              <p class="content-text">A AI Powered disease prediction tool</p>
+            </div>
+            <div class="button-group">
+              <button type="button" class="btn my-btn mx-3">
+                <a href="https://medicare-2025.netlify.app/" target="_blank"
+                  ><i class="fa-solid fa-link"></i> Visit</a
+                >
+              </button>
+            </div>
+          </div>
+
+          <div class="content portfolio-item mx-auto">
+            <div class="content-overlay"></div>
+            <img
+              class="content-image"
+              src="assets/projects/icalculator.png"
+              alt=""
+              class="portfolio-image"
+            />
+            <div class="content-details fadeIn-bottom">
+              <h3 class="content-title">iCalculator</h3>
+              <p class="content-text">Simple and Scientific Calc</p>
+            </div>
+            <div class="button-group">
+              <button type="button" class="btn my-btn mx-3">
+                <a
+                  href="https://27-nakulrathore.github.io/iCalculator/"
+                  target="_blank"
+                  ><i class="fa-solid fa-link"></i> Visit</a
+                >
+              </button>
+            </div>
+          </div>
+
+          <div class="content portfolio-item mx-auto">
+            <div class="content-overlay"></div>
+            <img
+              class="content-image"
+              src="assets/projects/how_lucky_you_are.png"
+              alt=""
+              class="portfolio-image"
+            />
+            <div class="content-details fadeIn-bottom">
+              <h3 class="content-title">How Lucky You Are</h3>
+              <p class="content-text">Guess the random number...</p>
+            </div>
+            <div class="button-group">
+              <button type="button" class="btn my-btn mx-3">
+                <a
+                  href=" https://27-nakulrathore.github.io/HowLuckyYouAre/"
+                  target="_blank"
+                  ><i class="fa-solid fa-link"></i> Visit</a
+                >
+              </button>
+            </div>
+          </div>
+
+          <div class="content portfolio-item mx-auto">
+            <div class="content-overlay"></div>
+            <img
+              class="content-image"
+              src="assets/projects/tic_tac_toe.png"
+              alt=""
+              class="portfolio-image"
+            />
+            <div class="content-details fadeIn-bottom">
+              <h3 class="content-title">tic tac toe</h3>
+              <p class="content-text">Play with fun</p>
+            </div>
+            <div class="button-group">
+              <button type="button" class="btn my-btn mx-3">
+                <a
+                  href="https://27-nakulrathore.github.io/Tic-Tac-Toe/"
+                  target="_blank"
+                  ><i class="fa-solid fa-link"></i> Visit</a
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- contact  -->
+      <section id="contact">
+        <div class="contact-box">
+          <div class="contact-links">
+            <h2>CONTACT</h2>
+            <div class="links">
+              <div title="Linkedin Profile" class="link">
+                <a
+                  href="https://www.linkedin.com/in/nakul-rathore-86699b295"
+                  target="_blank"
+                  ><img src="assets/social/linkedin.svg" alt="linkedin"
+                /></a>
+              </div>
+              <div title="Github Profile" class="link">
+                <a href="https://github.com/27-NakulRathore" target="_blank"
+                  ><img src="assets/social/github.svg" alt="github"
+                /></a>
+              </div>
+              <div title="X Handle" class="link">
+                <a href="" target="_blank"
+                  ><img src="assets/social/x.svg" alt="twitter"
+                /></a>
+              </div>
+              <div title="Facebook Profile" class="link">
+                <a href="" target="_blank"
+                  ><img src="assets/social/facebook.svg" alt="facebook"
+                /></a>
+              </div>
+              <div title="Instagram Profile" class="link">
+                <a href="" target="_blank"
+                  ><img src="assets/social/instagram.svg" alt="instagram"
+                /></a>
+              </div>
+              <div title="Email" class="link">
+                <a href="mailto:contact.nakulr950@gmail.com" target="_blank"
+                  ><img src="assets/social/mail.svg" alt="mail"
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="contact-form-wrapper">
+            <form
+              class="contact-form"
+              action="https://formsubmit.co/nakulrat950@gmail.com"
+              method="POST"
+            >
+              <div class="form-item">
+                <input id="name" type="text" name="name" required />
+                <label>Name</label>
+              </div>
+              <div class="form-item">
+                <input id="email" type="email" name="email" required />
+                <label>Email</label>
+              </div>
+              <div class="form-item">
+                <input id="subject" type="text" name="subject" required />
+                <label>Subject</label>
+              </div>
+              <div class="form-item">
+                <textarea
+                  id="message"
+                  class="message"
+                  name="message"
+                  required
+                ></textarea>
+                <label>Message</label>
+              </div>
+
+              <!-- Optional behavior controls -->
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_template" value="box" />
+              <input
+                type="hidden"
+                name="_autoresponse"
+                value="Thanks for reaching out! I’ll get back to you soon."
+              />
+
+              <!-- 🔁 Redirect to your custom thank you page -->
+              <input
+                type="hidden"
+                name="_next"
+                value="https://27-nakulrathore.github.io/Portfolio---Latest/pages/thanks.html"
+              />
+
+              <button id="submit-btn" type="submit" class="submit-btn">
+                Send
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- scroll to top button  -->
+      <a title="Back To Top" id="back-to-top">
+        <i class="fas fa-2x fa-angle-up" style="padding-top: 7px"></i>
+      </a>
     </main>
 
-    <footer id="footer" style="background-color: #222; color: #fff; text-align: center; padding: 20px 0;">
-        <p style="margin: 0; font-size: 16px;">
-            © <span id="curr-year"></span> —
-            <a href="https://www.linkedin.com/in/nakul-rathore-86699b295"
-            target="_blank"
-            title="LinkedIn Profile"
-            style="color: #00acee; text-decoration: none;">
-            <strong>Nakul Rathore Portfolio</strong>
-            </a>
-        </p>
+    <footer
+      id="footer"
+      style="
+        background-color: #222;
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+      "
+    >
+      <p style="margin: 0; font-size: 16px">
+        © <span id="curr-year"></span> —
+        <a
+          href="https://www.linkedin.com/in/nakul-rathore-86699b295"
+          target="_blank"
+          title="LinkedIn Profile"
+          style="color: #00acee; text-decoration: none"
+        >
+          <strong>Nakul Rathore Portfolio</strong>
+        </a>
+      </p>
 
-        <div style="margin-top: 10px;">
-            <a href="https://hitwebcounter.com" target="_blank" title="Visit Counter">
-                <img src="https://hitwebcounter.com/counter/counter.php?page=12257590&style=0038&nbdigits=6&type=page&initCount=0"
-                    alt="Visit Counter"
-                    style="vertical-align: middle;" />
-            </a>
-        </div>
+      <div style="margin-top: 10px">
+        <a
+          href="https://hitwebcounter.com"
+          target="_blank"
+          title="Visit Counter"
+        >
+          <img
+            src="https://hitwebcounter.com/counter/counter.php?page=12257590&style=0038&nbdigits=6&type=page&initCount=0"
+            alt="Visit Counter"
+            style="vertical-align: middle"
+          />
+        </a>
+      </div>
     </footer>
 
     <!-- Auto-update the year -->
     <script>
-        document.getElementById("curr-year").textContent = new Date().getFullYear();
+      document.getElementById("curr-year").textContent =
+        new Date().getFullYear();
     </script>
 
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
@@ -484,44 +702,122 @@
     <script src="scripts/main.js"></script>
     <!-- script for typing animation  -->
     <script>
-        var typed = new Typed('#typing', {
-            strings: ['Full-Stack Java Developer', 'Quick Learner', 'Web Developer', 'Cloud-Ready Backend Engineer', ],
-            typeSpeed: 100,
-            backDelay: 1500,
-            loop: true,
-            loopCount: Infinity,
-        });
-
+      var typed = new Typed("#typing", {
+        strings: [
+          "Backend Engineer (Java)",
+          "DevOps Enthusiast",
+          "Cloud Practitioner",
+          "Full Stack Developer",
+          "Problem Solver",
+        ],
+        typeSpeed: 100,
+        backDelay: 1500,
+        loop: true,
+        loopCount: Infinity,
+      });
     </script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
 
-<div class="cert-floating-widget" data-bs-toggle="modal" data-bs-target="#certGalleryModal">
-    <div class="cert-icon-circle">
+    <div
+      class="cert-floating-widget"
+      data-bs-toggle="modal"
+      data-bs-target="#certGalleryModal"
+    >
+      <div class="cert-icon-circle">
         <i class="fas fa-trophy"></i>
         <span class="badge-count">5</span>
+      </div>
+      <div class="cert-text-slide">Certifications</div>
     </div>
-    <div class="cert-text-slide">Certifications</div>
-</div>
 
-<div class="modal fade" id="certGalleryModal" tabindex="-1" aria-hidden="true" style="z-index: 99999;">
-    <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div
+      class="modal fade"
+      id="certGalleryModal"
+      tabindex="-1"
+      aria-hidden="true"
+      style="z-index: 99999"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content bg-dark text-white border-secondary">
-            <div class="modal-header border-secondary">
-                <h5 class="modal-title text-purple">My Certifications</h5>
-                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="modal-header border-secondary">
+            <h5 class="modal-title text-purple">My Certifications</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="row g-3">
+              <div class="col-6 col-md-4">
+                <img
+                  src="assets/images/aws-cert.png"
+                  class="img-fluid rounded border"
+                  alt="AWS"
+                />
+              </div>
+              <div class="col-6 col-md-4">
+                <img
+                  src="assets/images/java-cert.png"
+                  class="img-fluid rounded border"
+                  alt="Java"
+                />
+              </div>
+              <div class="col-6 col-md-4">
+                <img
+                  src="assets/images/accenture-cert.png"
+                  class="img-fluid rounded border"
+                  alt="Internship"
+                />
+              </div>
+              <div class="col-6 col-md-4">
+                <img
+                  src="assets/images/gssoc-cert.png"
+                  class="img-fluid rounded border"
+                  alt="GSSoC"
+                />
+              </div>
+              <div class="col-6 col-md-4">
+                <img
+                  src="assets/images/agile-cert.png"
+                  class="img-fluid rounded border"
+                  alt="Agile"
+                />
+              </div>
             </div>
-            <div class="modal-body">
-                <div class="row g-3">
-                    <div class="col-6 col-md-4"><img src="assets/images/aws-cert.png" class="img-fluid rounded border" alt="AWS"></div>
-                    <div class="col-6 col-md-4"><img src="assets/images/java-cert.png" class="img-fluid rounded border" alt="Java"></div>
-                    <div class="col-6 col-md-4"><img src="assets/images/accenture-cert.png" class="img-fluid rounded border" alt="Internship"></div>
-                    <div class="col-6 col-md-4"><img src="assets/images/gssoc-cert.png" class="img-fluid rounded border" alt="GSSoC"></div>
-                    <div class="col-6 col-md-4"><img src="assets/images/agile-cert.png" class="img-fluid rounded border" alt="Agile"></div>
-                </div>
-            </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
-</body>
+    <script>
+        const navLinks = document.querySelectorAll('.nav-link');
+        const menuToggle = document.getElementById('navbarSupportedContent');
 
+        navLinks.forEach(link => {
+
+        link.addEventListener('click', () => {
+
+        const bsCollapse = new bootstrap.Collapse(menuToggle,{
+        toggle:false
+        });
+
+        bsCollapse.hide();
+
+        });
+
+        });
+
+        const menuBtn = document.getElementById("menu-btn");
+
+menuBtn.addEventListener("click", function(){
+
+menuBtn.classList.toggle("open");
+
+});
+</script>
+  </body>
 </html>
