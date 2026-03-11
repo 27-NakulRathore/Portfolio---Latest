@@ -630,3 +630,87 @@ footer a {
 footer img {
     height: 30px;
 }
+
+/* Floating Widget Container */
+.cert-floating-widget {
+    position: fixed;
+    bottom: 40px;
+    left: 25px; /* Positioned on the left */
+    display: flex;
+    align-items: center;
+    z-index: 999999 !important; /* Forces it to the front */
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* The Circle Icon */
+.cert-icon-circle {
+    width: 60px;
+    height: 60px;
+    background: #6f42c1 !important; /* Solid Purple */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff !important;
+    font-size: 24px;
+    box-shadow: 0 5px 15px rgba(111, 66, 193, 0.5);
+    position: relative;
+    border: 2px solid #ffffff;
+    animation: pulse-purple 2s infinite;
+}
+
+/* Red Count Badge */
+.badge-count {
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    background: #ff4757;
+    color: white;
+    font-size: 12px;
+    padding: 2px 7px;
+    border-radius: 10px;
+    font-weight: bold;
+    border: 1px solid white;
+}
+
+/* Sliding Text */
+.cert-text-slide {
+    background: #222222;
+    color: #ffffff;
+    padding: 10px 20px 10px 30px;
+    border-radius: 0 30px 30px 0;
+    margin-left: -20px;
+    font-size: 14px;
+    font-weight: 600;
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: all 0.4s ease;
+    z-index: -1;
+    border: 1px solid #444;
+}
+
+/* Hover Behavior */
+.cert-floating-widget:hover .cert-text-slide {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.cert-floating-widget:hover .cert-icon-circle {
+    transform: scale(1.1);
+}
+
+/* Pulse Animation for Visibility */
+@keyframes pulse-purple {
+    0% { box-shadow: 0 0 0 0 rgba(111, 66, 193, 0.7); }
+    70% { box-shadow: 0 0 0 15px rgba(111, 66, 193, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(111, 66, 193, 0); }
+}
+
+/* Text color for "Certifications" heading in modal */
+.text-purple { color: #6f42c1; }
+
+/* Hide text on mobile for better UI */
+@media (max-width: 768px) {
+    .cert-text-slide { display: none; }
+}

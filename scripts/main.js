@@ -11,8 +11,8 @@ document.addEventListener('scroll', () => {
 // download cv
 const downloadCv = () => {
     const link = document.createElement('a');
-    link.href = 'assets/NakulRathore.pdf'; // ✅ path to your file
-    link.download = 'NakulRathore_Resume.docx';       // ✅ optional custom filename
+    link.href = 'assets/resume/NakulRathore.pdf'; // ✅ path to your file
+    link.download = 'NakulRathore_Resume.pdf';       // ✅ optional custom filename
     document.body.appendChild(link); // sometimes needed for Firefox
     link.click();
     document.body.removeChild(link);
