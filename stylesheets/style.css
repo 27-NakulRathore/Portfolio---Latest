@@ -39,7 +39,14 @@
   margin: 5px 0;
   transition: 0.4s;
 }
+.home-left{
+  position: relative;
+  z-index: 2;
+}
 
+#particles-js{
+  z-index: 0;
+}
 .navbar-toggler.open span:nth-child(1) {
   transform: rotate(45deg) translate(5px, 5px);
 }

@@ -95,9 +95,11 @@
 
                 <div class="mt-4">
 
-                <a href="#contact" class="btn btn-primary me-3">
+                <!-- <a href="#contact" class="btn btn-primary me-3">
                 Hire Me
-                </a>
+                </a> -->
+
+                <a href="#contact" class="btn btn-primary me-3" onclick="scrollToContact()">Hire Me</a>
 
                 <button type="button" class="btn btn-dark" onclick="downloadCv()">
                 <i class="fa-solid fa-download"></i> Download CV
@@ -818,6 +820,12 @@ menuBtn.addEventListener("click", function(){
 menuBtn.classList.toggle("open");
 
 });
+
+function scrollToContact() {
+  document.getElementById("contact").scrollIntoView({
+    behavior: "smooth"
+  });
+}
 </script>
   </body>
 </html>
